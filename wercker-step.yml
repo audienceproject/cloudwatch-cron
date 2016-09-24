@@ -1,0 +1,21 @@
+name: cloudwatch-cron
+version: 1.0.0
+description: A Wercker step to create or update an AWS Cloudwatch cron event
+keywords:
+  - cloudwatch
+  - cron
+  - aws
+properties:
+  name:
+    type: string
+    required: true
+  schedule:
+    type: string
+    required: true
+  state:
+    type: string
+    required: false
+    default: ENABLED
+  description:
+    type: string
+    required: false
