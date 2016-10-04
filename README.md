@@ -6,7 +6,7 @@ After a successful run of this step a `CLOUDWATCH_CRON_ARN` environment variable
 
 The step takes several arguments:
 
-* **name**: The name of the CloudWatch event. It is considered to be unique. There can be only one event with a certain name.
+* **label**: The name of the CloudWatch event. It is considered to be unique. There can be only one event with a certain name.
 * **schedule**: A cron expression according to the documentation for `--schedule-expression` in the [AWS cli](http://docs.aws.amazon.com/cli/latest/reference/events/put-rule.html).
 * **aws-account-id**: The AWS Account Id under which theLambda function needs to be published.
 * **lambda-role**: The AWS IAM Role that needs to be associated with the Lambda function to control its execution privileges.
@@ -18,7 +18,7 @@ The step takes several arguments:
 ```
 steps:
     - audienceproject/cloudwatch-cron:
-        name: run-backup
+        label: run-backup
         schedule: rate(6 hours)
         description: Back up the users database via a Lambda function
 ```

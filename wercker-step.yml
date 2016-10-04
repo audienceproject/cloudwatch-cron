@@ -6,7 +6,7 @@ keywords:
   - cron
   - aws
 properties:
-  name:
+  label:
     type: string
     required: true
   schedule:
