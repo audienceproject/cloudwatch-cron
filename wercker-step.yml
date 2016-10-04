@@ -1,5 +1,5 @@
 name: cloudwatch-cron
-version: 1.0.2
+version: 1.0.3
 description: A Wercker step to create or update an AWS Cloudwatch cron event
 keywords:
   - cloudwatch

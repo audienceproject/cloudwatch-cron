@@ -1,4 +1,3 @@
 #!/bin/bash
 
 aws events put-rule --name $WERCKER_CLOUDWATCH_CRON_LABEL --schedule-expression "$WERCKER_CLOUDWATCH_CRON_SCHEDULE" --state $WERCKER_CLOUDWATCH_CRON_STATE --description "$WERCKER_CLOUDWATCH_CRON_DESCRIPTION"
-aws events put-targets --rule $WERCKER_CLOUDWATCH_CRON_LABEL --targets $WERCKER_CLOUDWATCH_CRON_TARGETS
